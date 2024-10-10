@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
   font-family: Arial, sans-serif;
-  background-image: url('bui.webp');
+  background-image: url('w.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -66,37 +66,40 @@ header nav ul li a {
 }
 
 .form-container {
-  background-color: white;
-  padding: 40px;
+  background-color: transparent;
+  padding: 50px;
   border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
+  width: 500px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   color: black;
   text-align: center;
+ 
 }
 
 h2 {
   margin-bottom: 20px;
-  font-size: 1.8rem;
+  font-size: 50px;
   font-weight: bold;
+  color: rgb(255, 192, 203,0.8);
 }
 
 form input {
   width: 93%;
   padding: 15px;
   margin-bottom: 20px;
-  border: 2px solid #8b8484;
-  border-radius: 5px;
+  border-radius: 35px;
+  background-color: #000000;
+  color: #bd477e;
+  border: 3px solid rgb(255, 192, 203,0.8);
+  
 }
 
 form button {
-  width: 100%;
+  width: 50%;
   padding: 10px;
-  background-color: rgb(114, 108, 108);
+  background-color: rgb(255, 192, 203,0.8);
   color: white;
-  border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 35px;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -110,6 +113,7 @@ form button:hover {
 
 form p {
   margin-top: 15px;
+  color: white;
 }
 
 form p a {
@@ -164,5 +168,9 @@ li:hover{
   background-color: #211f1f;
 }
 input:hover{
-  border:2px solid #111111;
+  box-shadow: 5px 5px 3px rgb(255, 192, 203,0.4);
+}
+::placeholder{
+  color: rgb(255, 192, 203,0.4);
+  font-size: 18px;
 }
