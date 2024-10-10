@@ -46,13 +46,16 @@
     font-family:"league spartan";
     font-size:40px;
 }
-.tile1,.tile2,.tile3,.tile4,.tile5,.tile6,.tile7,.tile8,.tile9,.tile10
+.tile1
 {
     width:18vw;
     height:40vh;
     background-color:#FDA172;
     color:white;
+    font-size: 30px;
     display:flex;
     justify-content:center;
     align-items:center;
+    border: 3px solid black;
+    margin:10px;
 }
