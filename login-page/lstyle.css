@@ -1,29 +1,168 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('bui.webp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255,0.6);
+}
+
+header .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+#w{
+  margin-top: 20px;
+  width: 150px;
+  background-color: rgb(101, 97, 97);
+}
+#h{
+  margin-right: 200px;
+}
+header nav ul li a {
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 14px 80px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: larger;
+}
+
+
+
+/* Form Container Styling */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+form input {
+  width: 93%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #8b8484;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(114, 108, 108);
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #211f1f;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(212, 175, 89);
   
-  li {
-    float: left;
+}
+
+form p {
+  margin-top: 15px;
+}
+
+form p a {
+  color: red;
+  text-decoration: none;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  header {
+      padding: 10px 20px;
   }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+
+  .form-container {
+      padding: 20px;
   }
-  
-  li a:hover {
-    background-color: #111;
+
+  h2 {
+      font-size: 1.5rem;
   }
-  .main{
-    border-radius: 20px;
-    border-color: #111;
-    border-style: solid;
-    width: 30%;
+
+  form input {
+      padding: 8px;
   }
+
+  form button {
+      padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  header nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  header nav ul li {
+      margin: 10px 0;
+  }
+}
+
+li:hover{
+  text-shadow: 0.5px 0.5px;
+  background-color: #d8e9d4;
+}
+#w:hover {
+  background-color: #211f1f;
+}
+input:hover{
+  border:2px solid #111111;
+}
