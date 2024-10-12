@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Gill Sans", sans-serif;
+            font-size: 21px;
+            font-weight: 400;
+            background-image: url(bg1.jpg);
+            background-size: 48%;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+
+        .main {
+            width: 50%;
+            margin-left: 50%;
+            margin-top: 10%;
+        }
+
+        #p1, #p2 {
+            color: white;
+            font-size: 80px;
+            font-family: system-ui;
+            font-weight: 500;
+        }
+
+        #p2 {
+            color: rgb(150, 28, 128);
+        }
+
+        #p2 span {
+            color: white;
+        }
+
+        #text {
+            color: white;
+            font-weight: 200;
+            font-family: "Gill Sans", sans-serif;
+        }
+
+        nav {
+            background-color: rgb(61, 59, 59);
+            box-shadow: 3px 3px 5px white;
+        }
+
+        nav ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        nav li {
+            height: 96px;
+        }
+
+        nav a {
+            height: 100%;
+            padding: 0 45px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        nav a:hover {
+            background-color: rgb(28, 28, 28);
+        }
+
+        nav li:last-child {
+            margin-left: auto;
+            border-radius: 350px;
+            border-color: white;
+            border-style: solid;
+        }
+
+        #q:hover {
+            border-radius: 350px;
+            border-color: white;
+            background-color: rgb(28, 28, 28);
+        }
+
+       
+        .bs { position: fixed; 
+    top: 60%; 
+    left: 11%; 
+     transform: translateX(-50%); 
+    width: 12%;
+    height: 20%; 
+    border: 5px black solid; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.team { position: fixed; 
+    top: 18.6%; 
+    left: 34.5%; 
+    transform: translateX(-50%); 
+    width: 12%; 
+    height: 20%; 
+    border: 5px black solid; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.work { position: fixed; 
+    top: 21.2%; 
+    left: 12.5%; 
+     transform: translateX(-50%); 
+    width: 13%; 
+    height: 21%; 
+    border: 5px black solid; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+        
+        .overlay-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+           
+            
+        }
+
+       
+        .tile_data {
+  width: 50px;
+  background-color: black;
+  padding: 2px 2px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+.container {
+  display: grid;
+  place-items: center;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+}
+
+
+
+.tile_article {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.tile_data {
+  width: 100px;
+  background-color:white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.tile_description {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.tile_article:hover .tile_data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.tile_article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.tile_article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.tile_article:not(:hover) .tile_data {
+  animation: remove-data 1s forwards;
+}
+
+
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Biznest</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a id="q" href="#">Account Name</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <p id="p1">Where Ideas </p>
+        <p id="p1">Come to Life and </p>
+        <p id="p2">Creativity Knows </p>
+        <p id="p2">No Bounds <span>&rarr;</span></p><br><br>
+        <p id="text">"Discover Your Community: Your One-Stop Shop for Local Gems! 🌟 From <br>quaint cafes to unique boutiques, support your neighbors and find everything<br> you need right around the corner. Explore, connect, and thrive locally!"
+           </p>
+    </div>
+    
+   
+    <div class="container">
+        <article class="tile_article">
+        <div class="bs" style="border-radius: 30px;">
+        <img src="best_services.jpg"  alt="Best Services" class="overlay-image" id="t1">
+        <div class="tile_data">
+            <span class="tile_description">We offer the best services to our clients</span>
+            
+         </div>
+        </article>
+        <article class="tile_article">
+            <div class="team" style="border-radius: 30px;">
+            <img src="team.jpg"  alt="Professional Team" class="overlay-image" id="t2">
+            <div class="tile_data">
+                <span class="card__description">Our team is very professional</span>
+                
+             </div>
+            </article>
+            <article class="tile_article">
+                <div class="work" style="border-radius: 30px;">
+                <img src="work1.jpg"  alt="Best Services" class="overlay-image" id="t3">
+                <div class="tile_data">
+                    <span class="tile_description">We work hard to provide best experience</span>
+                    
+                 </div>
+                </article>
+    </div>
+   
+    </div>
+</body>
+</html>
