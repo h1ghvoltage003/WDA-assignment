@@ -41,6 +41,8 @@ nav ul li {
 .nav-button{
   background: transparent;
   border: transparent;
+  text-decoration:none;
+  color: white;
 }
 
 .search {
