@@ -15,16 +15,23 @@
             font-family: "Gill Sans", sans-serif;
             font-size: 21px;
             font-weight: 400;
-            background-image: url(bg1.jpg);
-            background-size: 48%;
-            background-repeat: no-repeat;
             background-color: black;
+            background-image: url("bg6.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+
 
         .main {
             width: 50%;
             margin-left: 50%;
             margin-top: 10%;
+        }
+        .logo{
+         position: fixed;
+          width: 8%;
+          height: 100px;
+         
         }
 
         #p1, #p2 {
@@ -35,7 +42,7 @@
         }
 
         #p2 {
-            color: rgb(150, 28, 128);
+            color: rgb(203, 107, 185);
         }
 
         #p2 span {
@@ -105,8 +112,8 @@
     align-items: center; 
 }
 .team { position: fixed; 
-    top: 18.6%; 
-    left: 34.5%; 
+    top: 18.8%; 
+    left: 35.3%; 
     transform: translateX(-50%); 
     width: 12%; 
     height: 20%; 
@@ -116,12 +123,61 @@
     justify-content: center;
     align-items: center; 
 }
-.work { position: fixed; 
-    top: 21.2%; 
-    left: 12.5%; 
+.arrow { position: fixed; 
+    top: 60%; 
+    left: 35.2%; 
+    transform: translateX(-50%); 
+    width: 12%; 
+    height: 20%; 
+    border: 3px rgb(245, 241, 241) solid; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.graph { position: fixed; 
+    top: 60%; 
+    left: 23.2%; 
+    transform: translateX(-50%); 
+    width: 12%; 
+    height: 20%; 
+    border: 3px rgb(247, 242, 242) solid; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.create { position: fixed; 
+    top: 40%; 
+    left: 23%; 
      transform: translateX(-50%); 
-    width: 13%; 
-    height: 21%; 
+    width: 37%; 
+    height: 19%; 
+    border: 5px black solid; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.work { position: fixed; 
+    top: 19%; 
+    left: 11%; 
+     transform: translateX(-50%); 
+    width: 12%; 
+    height: 20%; 
+    border: 5px black solid; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.tick{ position: fixed; 
+    top: 19%; 
+    left: 23.2%; 
+     transform: translateX(-50%); 
+    width: 12%; 
+    height: 20%; 
     border: 5px black solid; 
     overflow: hidden; 
     display: flex;
@@ -129,7 +185,7 @@
     align-items: center; 
 }
 
-        
+
         .overlay-image {
             position: absolute;
             top: 0;
@@ -251,6 +307,8 @@
     </style>
 </head>
 <body>
+  <img src="logo.jpg" alt="BizNest" class="logo">
+
     <nav>
         <ul>
             <li><a href="#">Biznest</a></li>
@@ -280,6 +338,8 @@
             
          </div>
         </article>
+
+
         <article class="tile_article">
             <div class="team" style="border-radius: 30px;">
             <img src="team.jpg"  alt="Professional Team" class="overlay-image" id="t2">
@@ -288,6 +348,7 @@
                 
              </div>
             </article>
+
             <article class="tile_article">
                 <div class="work" style="border-radius: 30px;">
                 <img src="work1.jpg"  alt="Best Services" class="overlay-image" id="t3">
@@ -296,8 +357,45 @@
                     
                  </div>
                 </article>
+
+                <article class="tile_article">
+                  <div class="create" style="border-radius: 30px;">
+                  <img src="b.jpg"  alt="creative" class="overlay-image" id="t4">
+                  </article>
+
+                  <article class="tile_article">
+                    <div class="graph" style="border-radius: 30px;">
+                    <img src="graph.jpg"  alt="creative" class="overlay-image" id="t5">
+                    <div class="tile_data">
+                      <span class="tile_description">We provide exposure and opportunities</span>
+                      
+                   </div>
+                    </article>
+
+                    <article class="tile_article">
+                      <div class="arrow" style="border-radius: 30px;">
+                      <img src="arrow1.jpg"  alt="creative" class="overlay-image" id="t6">
+                       
+                      </article>
+
+                    </article>
+
+                    <article class="tile_article">
+                      <div class="tick" style="border-radius: 30px;">
+                      <img src="tick1.avif"  alt="creative" class="overlay-image" id="t6">
+                      <div class="tile_data">
+                        <span class="tile_description">Satisfaction Assured</span>
+                        
+                     </div>
+                       
+                      </article>
+
+                     
+                        
+                        
+                        
     </div>
    
-    </div>
+    
 </body>
 </html>
