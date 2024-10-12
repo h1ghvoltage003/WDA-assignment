@@ -25,22 +25,37 @@ body
     background-color:#2b2b2b;
     width:40%;
     height:100vh;
-    
+    position:relative;
     overflow:hidden;
 }
 
 .imaging p{
     color:white;
-    text-align:right;
-    font-size:40px;
-    font-family:arial;
+    text-align:center;
+    font-weight:900;
+    font-family:"Arial";
+    font-size:70px;
+}
+.texting
+{
+    position:absolute;
+    bottom:0px;
+}
+.large
+{
+    display:inline-block;
+    font-size:90px;
+    font-family:"great vibes";
 }
 .imaging
 {
-    padding:20px;
+    position:relative;
+    
+    padding:5px;
     width:100%;
     height:70%;
     position:relative;
+    
 }
 .actuality
 {
@@ -75,7 +90,7 @@ body
     flex-direction:row;
     flex-wrap:wrap;
     /*background-color:*/
-    background-image: url("images/contact.jpg");
+    background-image: url("images/Picture1.jpg");
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:100% 100%;
@@ -83,20 +98,32 @@ body
     height:100vh;
 
     overflow-y:scroll;
+    overflow-x:hidden;
     justify-content:space-around;
     align-items:center;
     gap:30px;   
     
+}
+.tiles:has(.item:hover)
+{
+    background-image: url("images/purp.jpg");
+}
+.contac
+{
+    font-size:120px;
+    font-weight:500;
 }
 .contact
 {
     text-decoration:underline ;
     width:100%;
     height:30%;
-    color:white;
+    color:rgba(0,0,0,0.7);
+    text-shadow:0px 6px 8px rgba(255,255,255,0.1);
     text-align:center;
     font-family:pacifico;
-    font-size:100px;
+    font-size:90px;
+    font-weight:400;
 }
 .tile1,.tile2,.tile3,.tile4,.tile5,.tile6,.tile7,.tile8,.tile9,.tile10
 {
