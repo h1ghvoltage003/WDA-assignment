@@ -1,62 +1,209 @@
-* {
-    box-sizing: border-box;
-  }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #ffffff;
+  background-color: black;
+}
+
+header {
+  /* background-color: #6366f1; */
+  background: linear-gradient(135deg, #ff00ff 0%, #7700ff 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#logoimg{
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+.nav-button{
+  background: transparent;
+  border: transparent;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#search-button{
+  border-radius: 50px;
+}
+
+.search input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.search button {
+  padding: 10px 15px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.search button:hover{
+  transform: scale(1.1);
+}
+
+.categories {
+  padding: 20px;
+  text-align: center;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  transition: background-color 0.3s;
+  transition: transform 0.2s;
+}
+
+.category-item:hover {
+  background-color: #6366f1;
+  color: white;
+  transform: scale(1.1);
+}
+
+#Restaurants{
+  background-image: url("images/restaurant-image.webp");
+  background-size: 180px;
+}
+
+#Shopping{
+  background-image: url("images/shopping.webp");
+  background-size: 200px;
   
-  body {
-    margin: 0;
-  }
+}
+
+#HealthBeauty{
+  background-image: url("images/Beauty.webp");
+  background-size: 200px;
+}
+
+#Automotive{
+  background-image: url("images/automotive.webp");
+  background-size: 250px;
+  background-position-x: -60px;
+}
+
+#HomeService{
+  background-image: url("images/homeService.webp");
+  background-size: 150px;
+  background-position-x: -20px;
+}
+
+#Entertainment{
+  background-image: url("images/entertainment.webp");
+  background-size: 200px;
+  background-position: center;
+}
+
+.featured {
+  padding: 20px;
+}
+
+.listing {
+  /* background-color: white; */
   
-  /* Style the header */
-  .header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-  }
-  
-  /* Clear floats after the columns */
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width:600px) {
-    .column {
-      width: 100%;
-    }
-  }
-  .footer {
-      background-color: #f1f1f1;
-      padding: 10px;
-      text-align: center;
-    }
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: transform 0.2s;
+}
+
+.listing:hover{
+  transform: scale(1.025);
+}
+
+footer {
+  background: linear-gradient(135deg, #ff00ff 0%, #7700ff 100%);
+  color: white;
+  padding: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  color: #000000;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section.social a {
+  display: block;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+}

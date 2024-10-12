@@ -1,14 +1,12 @@
-/* Basic Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Body Styling */
 body {
   font-family: Arial, sans-serif;
-  background-image: url('w.jpg');
+  background-image: url(bg3.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -16,15 +14,15 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* Header Styling */
 header {
   width: 100%;
   padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(255, 255, 255,0.6);
+  background: linear-gradient(135deg, #ff00ff 0%, #7700ff 100%);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 header .logo {
@@ -53,10 +51,6 @@ header nav ul li a {
   font-weight: 600;
   font-size: larger;
 }
-
-
-
-/* Form Container Styling */
 .container {
   flex: 1;
   display: flex;
@@ -70,7 +64,6 @@ header nav ul li a {
   padding: 50px;
   border-radius: 10px;
   width: 500px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   color: black;
   text-align: center;
  
@@ -80,7 +73,8 @@ h2 {
   margin-bottom: 20px;
   font-size: 50px;
   font-weight: bold;
-  color: rgb(255, 192, 203,0.8);
+  color: rgb(187,0,254);
+  text-shadow: 1px 1px rgba(218, 55, 196, 0.8);
 }
 
 form input {
@@ -89,39 +83,45 @@ form input {
   margin-bottom: 20px;
   border-radius: 35px;
   background-color: #000000;
-  color: #bd477e;
-  border: 3px solid rgb(255, 192, 203,0.8);
+  color: rgba(218, 55, 196, 0.5);
+  border: 3px solid rgb(187,0,254);
   
 }
 
 form button {
   width: 50%;
   padding: 10px;
-  background-color: rgb(255, 192, 203,0.8);
+  background-color: rgb(187,0,254);
   color: white;
   border-radius: 35px;
   font-size: 1rem;
   cursor: pointer;
 }
-
+#w{
+  width: 20%;
+  padding: 10px;
+  background-color: rgb(187,0,254);
+  color: white;
+  border-radius: 35px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 form button:hover {
-  background-color: #211f1f;
-  border: 2px solid rgb(255, 255, 255);
-  color: rgb(212, 175, 89);
+  background-color: rgb(255, 45, 227);
+  border: 2px solid rgba(218, 55, 196, 0.2);
+  color: white;
   
 }
 
 form p {
   margin-top: 15px;
-  color: white;
+  color:rgb(187,0,254);
 }
 
 form p a {
-  color: red;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
-
-/* Responsive Styling */
 @media screen and (max-width: 768px) {
   header {
       padding: 10px 20px;
@@ -161,16 +161,17 @@ form p a {
 }
 
 li:hover{
-  text-shadow: 0.5px 0.5px;
-  background-color: #d8e9d4;
+  background-color: rgba(218, 55, 196,0.2);
 }
 #w:hover {
-  background-color: #211f1f;
+  background-color: rgb(255, 45, 227);
+  border: 2px solid rgba(218, 55, 196, 0.2);
+  color: white;
 }
 input:hover{
-  box-shadow: 5px 5px 3px rgb(255, 192, 203,0.4);
+  box-shadow: 5px 5px 3px rgb(187,0,254,0.5);
 }
 ::placeholder{
-  color: rgb(255, 192, 203,0.4);
+  color: rgb(187,0,254,0.5);
   font-size: 18px;
 }

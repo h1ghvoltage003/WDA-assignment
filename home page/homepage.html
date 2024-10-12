@@ -1,42 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home Page</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="hstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizNest</title>
+    <link rel="stylesheet" href="hstyle.css">
+    <link rel="icon" type="image/x-icon" href="images/logo (2).png">
 </head>
 <body>
+    <header>
+        <div class="logo"><img id="logoimg" src="images/logo (2).png" alt=""></div>
+        <nav>
+            <ul>
+                <li><button class="nav-button" href="#">Home</button></li>
+                <li><button class="nav-button" href="#">About</button></li>
+                <li><button class="nav-button" href="#">Contact</button></li>
+                <li><button class="nav-button" href="#">Categories</button></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="header">
-  <h1>Header</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
+    <main>
+        <section class="search">
+            <input type="text" placeholder="Search for services or products...">
+            <button id="search-button">Search</button>
+        </section>
 
-<div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-</div>
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <div class="category-item" id="Restaurants">
+                    <div class="category-image"></div>
+                    <div class="category-name">Restaurants</div>
+                </div>
+                <div class="category-item" id="Shopping">
+                    <div class="category-image"></div>
+                    <div class="category-name">Shopping</div>
+                </div>
+                <div class="category-item" id="HealthBeauty">
+                    <div class="category-image"></div>
+                    <div class="category-name">Health & Beauty</div>
+                </div>
+                <div class="category-item" id="Automotive">
+                    <div class="category-image"></div>
+                    <div class="category-name">Automotive</div>
+                </div>
+                <div class="category-item" id="HomeService">
+                    <div class = "category-image"></div>
+                    <div class="category-name">Home Services</div>
+                </div>
+                <div class="category-item" id="Entertainment">
+                    <div class="category-image"></div>
+                    <div class="category-name">Entertainment</div>
+                </div>
+            </div>
+        </section>
 
-<div class="row">
-  <div class="column">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-  </div>
-  
-  <div class="column">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-  </div>
-  
-  <div class="column">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-  </div>
-</div>
-<div class="footer">
-    <p>Footer</p>
-  </div>
+        <section class="featured">
+            <h2>Featured Listings</h2>
+            <div class="listing">
+                <h3>Tunday Kebabi</h3>
+                <p>Best Kebabs in town!</p>
+            </div>
+            <div class="listing">
+                <h3>Pheonix Palassio</h3>
+                <p>Your one-stop shop for everything!</p>
+            </div>
+            <div class="listing">
+                <h3>IIIT Lucknow</h3>
+                <p>The world is at IIIT Lucknow, where are you?</p>
+            </div>
+            <div class="listing">
+                <h3>Saroj Hostel</h3>
+                <p>Best hostel in the whole town!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>BizNest connects customers with local businesses, making it easy to find the best services in your area.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BizNest. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
