@@ -3,118 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Modern Grid</title>
+    <title>Eternal Coders Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="astyle.css">
 </head>
-<body>
-    <header class="header">
-        <div class="header-content">
-            <h1>Eternal Coders Portfolio</h1>
-            <p><em>Crafting New Oppurtunities</em></p>
+<body class="bg-black text-white">
+    <header class="header vh-100 d-flex align-items-center justify-content-center text-center position-relative overflow-hidden">
+        <div class="header-content z-2">
+            <h1 class="display-2 mb-3">Eternal Coders Portfolio</h1>
+            <p class="lead fst-italic">Crafting New Opportunities</p>
         </div>
         <div class="wave"></div>
     </header>
 
-    <section class="grid-section">
+    <section class="grid-section py-5">
         <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Frontend Development</h3>
-                    <p>Newbie in HTML5, CSS3, and modern web design principles. Creating responsive and intuitive user interfaces.</p>
+            <h2 class="text-center">Technical Skills</h2>
+            <div class="skills-grid row g-4 mt-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card h-100">
+                        <h3>Frontend Development</h3>
+                        <p>Newbie in HTML5, CSS3, and modern web design principles. Creating responsive and intuitive user interfaces.</p>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>UI/UX Design</h3>
-                    <p>Newbie in creating user-centered designs with a focus on accessibility and modern design trends.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card h-100">
+                        <h3>UI/UX Design</h3>
+                        <p>Newbie in creating user-centered designs with a focus on accessibility and modern design trends.</p>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Responsive Design</h3>
-                    <p>Building websites that work flawlessly across all devices and screen sizes.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card h-100">
+                        <h3>Responsive Design</h3>
+                        <p>Building websites that work flawlessly across all devices and screen sizes.</p>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Web Performance</h3>
-                    <p>Optimizing websites for speed and performance while maintaining visual appeal.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card h-100">
+                        <h3>Web Performance</h3>
+                        <p>Optimizing websites for speed and performance while maintaining visual appeal.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="grid-section" style="background: #14041b;">
+    <section class="grid-section py-5" style="background: #14041b;">
         <div class="container">
-            <h2>Project Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/vinayak.jpg" alt="Team Member 1">
-                    <div class="team-info">
-                        <h3>Vinayak Goel</h3>
-                        <p>Made Login and Sign-Up page</p>
+            <h2 class="text-center">Project Team</h2>
+            <div class="team-grid row g-4 mt-4">
+                <!-- Team Member 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/vinayak.jpg" alt="Team Member 1" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Vinayak Goel</h3>
+                            <p>Made Login and Sign-Up page</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/anas.jpg" alt="Team Member 2">
-                    <div class="team-info">
-                        <h3>Md. Anas Ali Usmani</h3>
+                <!-- Team Member 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/anas.jpg" alt="Team Member 1" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Md. Anas Ali Usmani</h3>
                         <p>Made About Us Page</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/taha.jpg" alt="Team Member 3">
-                    <div class="team-info">
-                        <h3>Mohd. Taha Rafi</h3>
+                <!-- Team Member 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/taha.jpg" alt="Team Member 1" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Mohd. Taha Rafi</h3>
                         <p>Made About Us page</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/divyanshu.jpg" alt="Team Member 4">
-                    <div class="team-info">
-                        <h3>Divyanshu Singh</h3>
+                <!-- Team Member 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/divyanshu.jpg" alt="Team Member 1" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Divyanshu Singh</h3>
                         <p>Made Home page</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/anjali.jpg" alt="Team Member 5">
-                    <div class="team-info">
-                        <h3>Anjali Pai</h3>
+                <!-- Team Member 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/anjali.jpg" alt="Team Member 1" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Anjali Pai</h3>
                         <p>Made index page</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/khushi.jpg" alt="Team Member 6">
-                    <div class="team-info">
-                        <h3>Khushi Arya</h3>
+                <!-- Team Member 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/khushi.jpg" alt="Team Member 1" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Khushi Arya</h3>
                         <p>Made Index page</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/diksha.jpg" alt="Team Member 7">
-                    <div class="team-info">
-                        <h3>Diksha Narayan</h3>
+                <!-- Team Member 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/diksha.jpg" alt="Team Member 1" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Diksha Narayan</h3>
                         <p>Made Contact-Us page</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/piyush.jpg" alt="Team Member 8">
-                    <div class="team-info">
-                        <h3>Piyush Khattar</h3>
+                <!-- Team Member 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/piyush.jpg" alt="Team Member 1" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Piyush Khattar</h3>
                         <p>Made Sign-Up page</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/samay.jpg" alt="Team Member 9">
-                    <div class="team-info">
-                        <h3>Samay Toradmal</h3>
+                <!-- Team Member 9 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/samay.jpg" alt="Team Member 9" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Samay Toradmal</h3>
                         <p>Home page, Design of all pages</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/aditya.jpg" alt="Team Member 10">
-                    <div class="team-info">
-                        <h3>Aditya Chandak</h3>
-                        <p>Made Contact-Us page</p>
+                <!-- Team Member 10 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member">
+                        <img src="images/aditya.jpg" alt="Team Member 10" class="img-fluid">
+                        <div class="team-info">
+                            <h3>Aditya Chandak</h3>
+                            <p>Made Contact-Us page</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
