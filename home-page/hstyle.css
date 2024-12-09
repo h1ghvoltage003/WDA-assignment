@@ -27,6 +27,74 @@ header {
   height: 70px;
 }
 
+#displayPicture{
+  border-radius: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profilePicture{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+#profilePicture:hover{
+  transform: scale(1.1);
+}
+
+#displayPictureButton{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+nav{
+  display: flex;
+}
+
+/* Dropdown Menu Styling */
+.user-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  margin-top: 20px;
+  right: 0;
+  background-color: white;
+  color: black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.user-dropdown p {
+  margin: 5px 0;
+}
+
+.user-dropdown p strong {
+  color: #333;
+}
+
+.user-dropdown p:last-child {
+  margin-bottom: 0;
+}
+
+.user-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -145,8 +213,6 @@ nav ul li {
 }
 
 .listing {
-  /* background-color: white; */
-  
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
